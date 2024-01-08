@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #f39c12;
+}
+
+#hero img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#featured-rentals {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.rental {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: fit-content;
+}
+
+#contact {
+    background-color: #2ecc71;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+
+/* responsive design styles */
+@media only screen and (max-width: 600px) {
+    #featured-rentals {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rental {
+        margin-bottom: 20px;
+    }
+}
+

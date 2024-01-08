@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Vacation Rental</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1>Vick's Vacation Rentals</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rentals</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <section id="hero">
+        <img src="images/hero-image.jpg" alt="Welcome to our vacation rentals">
+        <h2>Your Dream Vacation Awaits</h2>
+    </section>
+
+    <!-- featured rentals -->
+    <section id="featured-rental">
+        <!-- rental1 -->
+        <div class="rental">
+            <img src="images/image2.jpg" alt="Premium Chalets">
+            <h3>Premium Chalets</h3>
+            <p>Indulge in the essence of luxury in our premium waterfront chalets, which offer breathtaking views of the beach right on your doorstep. Immerse yourself in the unparalleled comfort of these exclusive accommodations that offer sophistication and serenity for an unforgettable beach holiday.</p>
+            <button>Book Now!</button>
+        </div>
+
+        <!-- rental2 -->
+        <div class="rental">
+            <img src="images/image1.jpg" alt="Classic Chalets">
+            <h3>Classic Chalets</h3>
+            <p>Experience coastal charm in our classic chalets nestled just steps away from the Paradise beach. These cozy accommodations offer a perfect blend of comfort and affordability, providing a serene haven for your beachfront retreat.  
+            <hr>
+            *The chalet sleeps up to 4 people including child.
+            </p>
+            <button>Book Now!</button>
+        </div>
+
+        <!-- rental3 -->
+        <div class="rental">
+            <img src="images/image3.jpg" alt="Beach Bar">
+            <h3>Beach Bar</h3>
+            <p>Enjoy the essence of paradise at our 24-hour beach bar, where the rhythmic waves meet the best cocktails and tapas. From sunrise cocktails to moonlight cocktails, indulge in a perfect blend of coastal ambience and refreshing drinks at any time. 
+            <hr>
+            *Service not included at the chalet's price.</p>
+            <button>Book Now</button>
+        </div>
+    </section>
+
+    <!-- form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- script -->
+    <script>
+        // You can use a library like datepicker.js for more advanced functionality
+        // For simplicity, I'll use the browser's default date input
+        document.addEventListener('DOMContentLoaded', function () {
+            const dateInputs = document.querySelectorAll('input[type="date"]');
+            dateInputs.forEach(function (input) {
+                input.setAttribute('min', new Date().toISOString().split('T')[0]);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
