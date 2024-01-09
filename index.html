@@ -98,10 +98,11 @@
                 <p>Alagoas - Brazil</p>
                 <hr>
                 <h3><i class="fa-brands fa-whatsapp"></i><b> WhatsApp: +49 1234 567 8900</b></h3>
+                <p>You can easily message us telling about the dates you are interested in rent our chalets, and we will come back to you asap!</p>
             </div>
 
             <div id="form">
-                <h3><i class="fa-solid fa-paper-plane"></i><b> Send us a message:</b></h3>
+                <h3><i class="fa-solid fa-paper-plane"></i><b> Send us a message with the dates you want to rent a chalet:</b></h3>
             <hr>
                 <form action="" method="post">
                     <div>
@@ -120,25 +121,20 @@
                     <br>
                     <textarea id="message" placeholder="Your message" name="message" rows="8" required></textarea>
                     <br>
+                <!--   
+                    Novo campo de data
+                    <div>
+                        <label for="booking-date">Booking Date</label>
+                        <br>
+                        <input id="booking-date" type="date" name="booking-date" required>
+                    </div>
+                -->
+                    <br>
                     <input type="submit" value="Submit">
                 </form>
             </div>            
         </div>
     </section>
-
-    <!-- script -->
-    <!--
-    <script>
-        // You can use a library like datepicker.js for more advanced functionality
-        // For simplicity, I'll use the browser's default date input
-        document.addEventListener('DOMContentLoaded', function () {
-            const dateInputs = document.querySelectorAll('input[type="date"]');
-            dateInputs.forEach(function (input) {
-                input.setAttribute('min', new Date().toISOString().split('T')[0]);
-            });
-        });
-    </script>
-    -->
 
     <!-- footer --> 
     <footer> 
@@ -151,6 +147,8 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/54f594dda6.js" crossorigin="anonymous">
     </script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
